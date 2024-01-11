@@ -34,7 +34,6 @@ fun GenreView(genres: ApiGenres) {
             }
         }
     }
-
 }
 
 @Preview

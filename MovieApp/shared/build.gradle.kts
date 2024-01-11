@@ -45,6 +45,8 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-android:$ktorVersion")
+                implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
+                api("androidx.core:core-ktx:1.12.0")
             }
         }
         val androidUnitTest by getting

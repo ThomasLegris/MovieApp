@@ -23,7 +23,6 @@ import io.ktor.http.isSuccess
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
-
 class HttpExceptions(
     response: HttpResponse,
     failureReason: String?,
@@ -51,6 +50,7 @@ class MoviesRepositoryImpl : MoviesRepository {
                 useAlternativeNames = false
             })
         }
+
         install(ResponseObserver) {
             onResponse { httpResponse ->
                 println("Movie Request url: ${httpResponse.call.request.url}")

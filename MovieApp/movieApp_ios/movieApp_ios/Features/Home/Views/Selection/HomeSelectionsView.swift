@@ -65,7 +65,7 @@ struct HomeSelectionsView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(MColor.Common.background)
             .alert(item: $apiError) { _ in
-                Alert(title: Text("Erreur"), message: Text(apiError?.title ?? ""))
+                Alert(title: Text("Erreur lors de la récupération des informations de films"), message: Text(apiError?.title ?? ""))
             }
         }
     }

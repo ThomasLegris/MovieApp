@@ -13,5 +13,7 @@ enum MColor {
         static let lightBlue: Color = Color("light_blue")
         static let lightGreen: Color = Color("light_green")
         static let background: Color = Color("background") 
+        static let red: Color = Color("red")
+        static let lightRed: Color = Color("light_red")
     }
 }
